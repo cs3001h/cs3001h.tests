@@ -100,7 +100,11 @@ begin_signature:
         .global end_signature;                                          \
 end_signature:
 
-#define TEST_DATA
+#define TEST_DATA                                                       \
+td1: .word 0xdeadbeef;                                                  \
+td2: .word 0xdeadbeef;                                                  \
+td3: .word 0xdeadbeef;                                                  \
+td4: .word 0xdeadbeef;                                                  \
 
 #-----------------------------------------------------------------------
 # Tests for instructions with immediate operand
