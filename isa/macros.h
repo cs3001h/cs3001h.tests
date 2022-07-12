@@ -11,8 +11,8 @@
 
 #define MASK_XLEN(x) ((x) & ((1 << (__riscv_xlen - 1) << 1) - 1))
 
-#define TESTNUM a0
-#define TESTRES a1
+#define TESTNUM gp
+#define TESTRES fp
 
 #define TEST_CASE( testnum, testreg, correctval, code... ) \
 test_ ## testnum: \
